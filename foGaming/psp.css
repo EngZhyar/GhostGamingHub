@@ -1,0 +1,16 @@
+body{
+ background-color:black ;
+}
+
+
+img{
+    margin: 5px;
+    border-radius: 25px;
+    width: 140px;
+    height: 170px;
+    cursor: pointer;
+    border:5px ridge rgb(3, 161, 21) ;
+}
+
+
+
