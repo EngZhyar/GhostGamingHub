@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+
+.allCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+header img{
+    width: 340px;
+    height: 340px;
+}
+
+
+.allCards img{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    width: 150px;
+    height: 130px;
+    cursor: pointer;
+    border:5px ridge rgb(3, 161, 21) ;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+header h2{
+    color: rgb(3, 161, 21);
+    font-size: 40px;
+    font-weight:bolder;
+    
+text-align: center;
+}
+

@@ -1,0 +1,44 @@
+body{
+ background-color:black ;
+}
+
+#searchBox{
+   border-radius: 50px;
+    width: 250px;
+    height: 40px;
+    border:5px ridge rgb(3, 161, 21) ;
+    text-align: center;
+}
+.searchBar{
+    position: fixed; 
+
+    margin-top: 25px;
+
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+header img{
+    margin-top: 0px;
+    margin-left: 0;
+    width: 40px;
+    height: 40px;
+   
+    cursor: pointer;
+    border:none ;
+}
+img{
+
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 25px;
+    width: 140px;
+    height: 170px;
+    cursor: pointer;
+    border:5px ridge rgb(3, 161, 21) ;
+}
+
+
+
