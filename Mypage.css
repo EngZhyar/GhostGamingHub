@@ -1,0 +1,60 @@
+.searchBar{
+    position: fixed; 
+    margin-top: 25px;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+body{
+    background-color: black;
+    max-height: 935px;
+}
+h1{
+    background-color: black;
+    width: 418px;
+    margin-left: -15px;
+    padding-left: 15px;
+    color: aliceblue; 
+    margin-top: 115px;
+    position:fixed;
+    justify-content: center;
+    text-align: center;
+}
+
+header img{
+    margin-top: 0px;
+    margin-left: 0;
+    width: 40px;
+    height: 40px;
+   
+    cursor: pointer;
+    border:none ;
+}
+
+
+.Mypage img{
+    margin-left: -8px;
+    margin-top: -38px;
+    min-width:430px;
+    max-width: 500px;
+}
+
+.footerButton{
+padding-right: 30px;
+    width: 500px;
+    height: 120px;
+    margin: 0;
+    margin-left: -10px;
+    margin-top: -10px;
+    color: white;
+    font-weight: 1000;
+    font-size: 36px;
+    background: linear-gradient(to bottom left,rgb(116, 173, 30), black);        border: 2px solid greenyellow;
+        border-radius: 50px;
+        transition: all 0.3 ease;
+    cursor: pointer;
+
+
+}
