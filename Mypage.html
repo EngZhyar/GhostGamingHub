@@ -25,10 +25,20 @@
 </div>
 
 
-    <button class="footerButton" > ئێرە داگرە بۆ داواکردنی یاری</button>
+ 
+<button class="footerButton" onclick="sendMessageToTelegram()">ئێرە داگرە بۆ داواکردنی یاری</button>
 
 
-<script src="MyPageBack.js"></script>
+<script>function sendMessageToTelegram() {
+    // Replace with the username or ID you want to send a message to
+    let telegramUsername = 'EngZhyar';
+    
+    // Generate the Telegram link
+    let telegramLink = `tg://msg?to=${telegramUsername}`;
+    
+    // Open the Telegram link
+    window.location.href = telegramLink;
+}</script>
 
 </body>
 </html>
