@@ -23,15 +23,11 @@
 </div>
 
 
-<button class="footerButton" onclick="sendMessageToTelegram()">ئێرە داگرە بۆ داواکردنی یاری</button>
+<button class="footerButton" onclick="window.open('https://t.me/EngZhyar')">ئێرە داگرە بۆ داواکردنی یاری</button>
 
 
 <script>
-    function sendMessageToTelegram() {
-        let telegramUsername = 'EngZhyar'; // Adjust with your actual Telegram username
-        let telegramLink = `tg://msg?to=${telegramUsername}`;    
-        window.location.href = telegramLink;
-    }
+ 
 
     function goBack() {
         window.location.href = 'index.html'; // Replace with your desired back button behavior
