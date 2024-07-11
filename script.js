@@ -1,30 +1,47 @@
 let hasSearched = false;
 
 document.addEventListener('DOMContentLoaded', function() {
-    sortGames();
-});
+    // Event listener for the search box
+    document.getElementById('searchBox').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            searchGames();
+            hasSearched = true;
+        }
+    });
 
-document.getElementById('searchBox').addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        searchGames();
-        hasSearched = true;
-    }
+    // Event listener for the back button
+    document.getElementById('backButton').addEventListener('click', function() {
+        goBack();
+    });
 });
 
 function searchGames() {
-    let input = document.getElementById('searchBox').value.toLowerCase();
+    let input = document.getElementById('searchBox').value.trim().toLowerCase();
     let gallery = document.getElementById('gallery');
     let images = gallery.getElementsByTagName('img');
-    
+
     for (let i = 0; i < images.length; i++) {
-        let altText = images[i].alt.toLowerCase();
+        let altText = images[i].alt.trim().toLowerCase();
         if (altText.includes(input)) {
-            images[i].classList.remove('hidden');
+            images[i].style.display = 'inline';
         } else {
-            images[i].classList.add('hidden');
+            images[i].style.display = 'none';
         }
     }
 }
+
+function goBack() {
+    if (hasSearched) {
+        window.location.href = 'psp.html'; // Navigate to psp.html if search was performed
+    } else {
+        window.location.href = 'index.html'; // Otherwise, navigate to index.html
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    sortGames();
+});
 
 function sortGames() {
     const gallery = document.getElementById('gallery');
@@ -41,62 +58,4 @@ function sortGames() {
     });
 }
 
-function goBack() {
-    if (hasSearched) {
-        window.location.href = 'psp.html';
-    } else {
-        window.location.href = 'index.html';
-    }
-}
 
-document.addEventListener('DOMContentLoaded', function() {
-    const images = Array.from(document.querySelectorAll('#gallery img'));
-    const itemsPerPage = 10;
-    const totalPages = Math.ceil(images.length / itemsPerPage);
-
-    let currentPage = 1;
-
-    function showPage(page) {
-        currentPage = page;
-        images.forEach((img, index) => {
-            img.style.display = (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) ? 'inline' : 'none';
-        });
-
-        updatePagination();
-    }
-
-    function updatePagination() {
-        const currentPageSpan = document.getElementById('current-page');
-        const nextPageSpan = document.getElementById('next-page');
-        const prevPageButton = document.getElementById('prev-page');
-        const nextPageButton = document.getElementById('next-page');
-        const lastPageButton = document.getElementById('last-page');
-
-        currentPageSpan.innerText = currentPage;
-        nextPageSpan.innerText = currentPage < totalPages ? currentPage + 1 : totalPages;
-
-        prevPageButton.classList.toggle('disabled', currentPage === 1);
-        nextPageButton.classList.toggle('disabled', currentPage === totalPages);
-    }
-
-    function createPagination() {
-        document.getElementById('prev-page').addEventListener('click', () => {
-            if (currentPage > 1) {
-                showPage(currentPage - 1);
-            }
-        });
-
-        document.getElementById('next-page').addEventListener('click', () => {
-            if (currentPage < totalPages) {
-                showPage(currentPage + 1);
-            }
-        });
-
-        document.getElementById('last-page').addEventListener('click', () => {
-            showPage(totalPages);
-        });
-    }
-
-    createPagination();
-    showPage(1);
-});
