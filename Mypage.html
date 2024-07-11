@@ -19,26 +19,23 @@
 
 
 <div class="Mypage">
- 
-
     <img src="Assets/Mypage/Mypage.jpeg" alt="Mypage">
 </div>
 
 
- 
 <button class="footerButton" onclick="sendMessageToTelegram()">ئێرە داگرە بۆ داواکردنی یاری</button>
 
 
-<script>function sendMessageToTelegram() {
-    // Replace with the username or ID you want to send a message to
-    let telegramUsername = '@EngZhyar';
-    
-    // Generate the Telegram link
-    let telegramLink = `tg://msg?to=${telegramUsername}`;
-    
-    // Open the Telegram link
-    window.location.href = telegramLink;
-}</script>
+<script>
+    function sendMessageToTelegram() {
+        let telegramUsername = 'EngZhyar'; // Adjust with your actual Telegram username
+        let telegramLink = `tg://msg?to=${telegramUsername}`;    
+        window.location.href = telegramLink;
+    }
 
+    function goBack() {
+        window.location.href = 'index.html'; // Replace with your desired back button behavior
+    }
+</script>
 </body>
 </html>
