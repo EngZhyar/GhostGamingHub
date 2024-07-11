@@ -48,3 +48,55 @@ function goBack() {
         window.location.href = 'index.html';
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const images = Array.from(document.querySelectorAll('#gallery img'));
+    const itemsPerPage = 10;
+    const totalPages = Math.ceil(images.length / itemsPerPage);
+
+    let currentPage = 1;
+
+    function showPage(page) {
+        currentPage = page;
+        images.forEach((img, index) => {
+            img.style.display = (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) ? 'inline' : 'none';
+        });
+
+        updatePagination();
+    }
+
+    function updatePagination() {
+        const currentPageSpan = document.getElementById('current-page');
+        const nextPageSpan = document.getElementById('next-page');
+        const prevPageButton = document.getElementById('prev-page');
+        const nextPageButton = document.getElementById('next-page');
+        const lastPageButton = document.getElementById('last-page');
+
+        currentPageSpan.innerText = currentPage;
+        nextPageSpan.innerText = currentPage < totalPages ? currentPage + 1 : totalPages;
+
+        prevPageButton.classList.toggle('disabled', currentPage === 1);
+        nextPageButton.classList.toggle('disabled', currentPage === totalPages);
+    }
+
+    function createPagination() {
+        document.getElementById('prev-page').addEventListener('click', () => {
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
+        });
+
+        document.getElementById('next-page').addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                showPage(currentPage + 1);
+            }
+        });
+
+        document.getElementById('last-page').addEventListener('click', () => {
+            showPage(totalPages);
+        });
+    }
+
+    createPagination();
+    showPage(1);
+});
