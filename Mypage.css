@@ -17,17 +17,22 @@ h1{
     margin-left: -15px;
     padding-left: 15px;
     color: aliceblue; 
-    margin-top: 115px;
+    margin-top: 80px;
     position:fixed;
     justify-content: center;
     text-align: center;
+    display: inline-block; /* Ensure the background only wraps around the text */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+
 }
 
+
 header img{
-    margin-top: 0px;
+    margin-top: 70px;
     margin-left: 0;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
    
     cursor: pointer;
     border:none ;
