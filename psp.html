@@ -10,6 +10,23 @@
         .hidden {
             display: none;
         }
+        .page-button {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+        }
+        .active {
+            background-color: greenyellow;
+            color: #000000;
+            font-weight: bolder;
+        }
+
+        .disabled {
+            cursor: not-allowed;
+            background-color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -25,23 +42,17 @@
     <div id="gallery">
         <img src="Assets/psp/spiderman3.png" alt="spiderman3" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/fifa14.jpg" alt="fifa14" onclick="window.location.href = 'Mypage.html';">
-        
-         <img src="Assets/psp/spiderman3.png" alt="spiderman3" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/fifa14.jpg" alt="fifa14" onclick="window.location.href = 'Mypage.html';">
-         <img src="Assets/psp/spiderman3.png" alt="spiderman3" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/fifa14.jpg" alt="fifa14" onclick="window.location.href = 'Mypage.html';">
-         <img src="Assets/psp/spiderman3.png" alt="spiderman3" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/fifa14.jpg" alt="fifa14" onclick="window.location.href = 'Mypage.html';">
-         <img src="Assets/psp/spiderman3.png" alt="spiderman3" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/fifa14.jpg" alt="fifa14" onclick="window.location.href = 'Mypage.html';">
-         <img src="Assets/psp/spiderman3.png" alt="spiderman3" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/fifa14.jpg" alt="fifa14" onclick="window.location.href = 'Mypage.html';">
-         <img src="Assets/psp/spiderman3.png" alt="spiderman3" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/fifa14.jpg" alt="fifa14" onclick="window.location.href = 'Mypage.html';">
-         <img src="Assets/psp/spiderman3.png" alt="spiderman3" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/fifa14.jpg" alt="fifa14" onclick="window.location.href = 'Mypage.html';">
-      
+
+    
     </div>
+
+    <div id="pagination" style="text-align: center; margin-top: 20px;">
+        <span id="prev-page" class="page-button">&lsaquo;</span> <!-- Using ‹ for Previous -->
+        <span id="current-page" class="page-button active">1</span>
+        <span id="next-page" class="page-button">2</span>
+        <span id="last-page" class="page-button">&raquo;</span> <!-- Using » for Last -->
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
