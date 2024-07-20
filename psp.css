@@ -1,44 +1,49 @@
 body{
- background-color:black ;
+ background:url('Assets/black.jpg'); 
+ background-size:contain;
+ background-position: center;
 }
-
-#searchBox{
-   border-radius: 50px;
-    width: 250px;
-    height: 40px;
-    border:5px ridge rgb(3, 161, 21) ;
-    text-align: center;
-}
-.searchBar{
-    position: fixed; 
-
-    margin-top: 25px;
-
-    display: flex;
-    gap: 2em;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-header img{
-    margin-top: 0px;
-    margin-left: 0;
-    width: 40px;
-    height: 40px;
-   
+.pagination button {
+    margin: 0 5px;
+    padding: 10px;
     cursor: pointer;
-    border:none ;
 }
+
 img{
 
     margin-top: 15px;
     margin-left: 15px;
     border-radius: 25px;
-    width: 90px;
-    height: 180px;
+    width: 290x;
+    height: 280px;
     cursor: pointer;
-    border:5px ridge rgb(3, 161, 21) ;
+    border:5px dotted rgb(196, 239, 203);
+}
+.gallery {
+    display: grid;
+    gap: 10px; 
+    grid-template-columns: repeat(6, 1fr);
+
+}
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
+@media (max-width: 767px) {
+    .gallery {
+        gap: 0px; 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img{
+
+        margin-top: 5px;
+        border-radius: 25px;
+        width: 70x;
+        height: 180px;
+        cursor: pointer;
+        border:5px dotted rgb(196, 239, 203);
+    }
+}
 
 
