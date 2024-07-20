@@ -34,7 +34,7 @@ img{
     margin-top: 15px;
     margin-left: 15px;
     border-radius: 25px;
-    width: auto;
+    width: 100px;
     height: 180px;
     cursor: pointer;
     border:5px ridge rgb(3, 161, 21) ;
