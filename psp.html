@@ -6,47 +6,24 @@
     <link rel="icon" href="Assets/profile.png" type="image/png">
 
     <link rel="stylesheet" href="psp.css">
-    <style>
-        .hidden {
-            display: none;
-        }
-        .page-button {
-            cursor: pointer;
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #000;
-            background-color: #f0f0f0;
-        }
-        .active {
-            background-color: greenyellow;
-            color: #000000;
-            font-weight: bolder;
-        }
 
-        .disabled {
-            cursor: not-allowed;
-            background-color: #ddd;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <div class="searchBar">
+        <div class="searchBar" style="display: none;">
         <img src="Assets/Back Button.png" alt="backButton" onclick="goBack()">
 
-        <input type="text" id="searchBox" placeholder="Search Games">
     </div>
     <div style="width: 100px; height:70px"></div>
     </header>
     
-    <div id="gallery">
-        <img src="Assets/psp/007 - from russia with love.jpg" alt="007 - from russia with love.jpg" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/300 - march to glory.jpg" alt="" onclick="window.location.href = 'Mypage.html';">    
+    <div class="gallery">
+        <img src="Assets/psp/007 - from russia with love.jpg" alt="007 from russia with love" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/300 - march to glory.jpg" alt="300" onclick="window.location.href = 'Mypage.html';">    
         <img src="Assets/psp/ace combat - joint assault.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/ace combat x - skies deception psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/Aces_of_War-Coverart.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/after burner- black falcon psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
-        <img src="Assets/psp/akumajou dracula x - chronicle psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/aliens vs predator - requiem psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/army of two - the 40th day  psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/assassin's creed bloodlines  psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
@@ -69,15 +46,138 @@
         <img src="Assets/psp/dead to rights reckoning psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/def jam fight for ny the takeover psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
         <img src="Assets/psp/diasenryaku daitoua kouboushi psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/diner dash sizzle & serve psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/disney phineas and ferb across the 2nd dimension psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/don 2 the game  psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+    
+     
+        <img src="Assets/psp/dynasty warriors psp cover image.png" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/dynasty warriors strikeforce psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/dynasty wrriors vol 2 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fast and the furious the psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fifa 06 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fifa 08 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fifa 10 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fifa 12 psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fifa 14 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fifa soccer 07 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fifa street 2 psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/fight night round 3 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/final fantasy iv the complete collection psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/Final Fantasy Tactics the war of the lions  psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/gang wars psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/gekaitsu pachige damashi  psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/ghost rider psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/god of war chains of olympus psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/god of war ghost of sparta psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/godfather the mob wars psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/gran turismo psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/grand theft auto chinatown wars psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/grand theft auto liberty city stories psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/grand theft auto vice city stories psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/Gun showdown psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/hero of sparta psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/history ice road truckers psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/hot wheels ultimate racing psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/il 2 sturmovik birds of prey psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/iron man 2 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/iron man psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/justice league heroes psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/killzone liberation psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/king of fighters 94 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/lara croft tomb raider anniversary psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/manhunt 2 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/marvel nemesis rise of the imperfects psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/marvel ultimate alliance 2 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/marvel ultimate alliance psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/medal of honor heroes 2 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/medal of honor heroes psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/meitantei conan kako kara no prelude psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/metal gear solid bande dessinee psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/metal gear solid digital graphic novel psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/metal gear solid peace walker psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/metal gear solid portable ops psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/midnight club 3 dub edition psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/military history commander psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/mortal kombat unchained psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/mtx mototrax psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/need for speed carbon own the city psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/need for speed most wanted psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/need for speed prostreet psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/need for speed shift psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/need for speed underground rivals psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/nickelodean avatar the legend of aang psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/nickelodeaon spongebob squarepants the  yellow avenger psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/noBunaga no yabou soutenroku with powerup psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pes 2013 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pes 2014 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/peter jackson's king kong psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/platypus psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/prince of persia revelations psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/prince of persia rival swords psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/prince of persia the forgotten sands psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pro evolution soccer 2008 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pro evolution soccer 2009 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pro evolution soccer 2010 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pro evolution soccer 2011 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pro evolution soccer 2012 psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pro evolution soccer 5 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/pro evolution soccer 6 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/ratatui psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/ratchet and clank size matters psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/red bull x-fighters psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/resistance retribution psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/samurai shodown anthology psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/sengoku musou 3z special psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/shin sangoku musou 5 special psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/shin sangoku musou multi raid psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/shin sngoku musou 2nd evolution psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/shrek the third psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/silent hill origins psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/sky force psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/socom navy seals fireteam bravo 3 psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/socom navy seals fireteam bravo psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/socom navy seals tacticl strike psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/spider man 2 psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/spider man 3 psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/spider man friend or foe psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/spider man web of shadow psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/split second velocity psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/star wars battlefront renegade psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/star wars the force unleashed psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/steel horizon psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/striker 1945 plus psp cover image.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/swat target liberty psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/tekken 6 psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/tekken dark resurrection psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/tmnt psp cover image.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/tom clancy's ghost recon - predator psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/tom clancy's splinter cell - essentials psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/top gun.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/twisted metal - head on psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/UEFA champions league 2006-2007 psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/Ultraman_Fighting_Evolution_Zero_JPN_PSP-Coverart.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/wall-e psp cover.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/warriors orochi 2 psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/warriors orochi psp cover.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/wwe 11 reloaded.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/wwe all stars.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/wwe smackdown vs row 2007.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/wwe smackdown vs row 2008.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/wwe smackdown vs row 2010.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/wwe smackdown vs row 2011.jpeg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/Winning eleven - pro evolution soccer 2007.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/World soccer winning eleven 2011.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/WWE_Smackdown_Vs_Raw_2006_USA_PSP.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/WWE_Smackdown_Vs_Raw_2009.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/x-men legends 2 rise of apocalypse.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/x-men origins - wolverine .jpg" alt="" onclick="window.location.href = 'Mypage.html';">
+        <img src="Assets/psp/Xiaolin_Showdown_USA_PSP-Coverart.jpg" alt="" onclick="window.location.href = 'Mypage.html';">
 
+</div>
+<div class="pagination" id="pagination-controls"></div>
 
-        
-        
-    </div>
-
-  
-
-    <script src="script.js"></script>
+    <script src="paging.js"></script>
 
 </body>
 </html>
